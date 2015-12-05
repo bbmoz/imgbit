@@ -1,0 +1,58 @@
+{
+  "name": "imgbit",
+  "version": "0.0.0",
+  "description": "Optimizes images automatically for the web",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "setup": "brew update; brew install imagemagick --with-webp; brew install graphicsmagick; npm install -g gulp",
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bbmoz/imgbit.git"
+  },
+  "author": "Joe Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bbmoz/imgbit/issues"
+  },
+  "homepage": "https://github.com/bbmoz/imgbit",
+  "dependencies": {
+    "gm": "^1.21.1",
+    "good": "^6.4.0",
+    "good-console": "^5.2.0",
+    "hapi": "^11.1.2",
+    "inert": "^3.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.13",
+    "babel-preset-es2015": "^6.3.13",
+    "babelify": "^7.2.0",
+    "browser-sync": "^2.10.0",
+    "browserify": "^12.0.1",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.1",
+    "gulp-cached": "^1.1.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-eslint": "^1.1.1",
+    "gulp-jasmine": "^2.2.1",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-nodemon": "^2.0.4",
+    "gulp-sequence": "^0.4.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "jasmine-spec-reporter": "^2.4.0",
+    "pre-commit": "^1.1.2",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "engines": {
+    "node": "^4.2.3",
+    "npm": "^2.14.7"
+  },
+  "engineStrict": true,
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  }
+}
